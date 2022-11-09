@@ -97,47 +97,4 @@ export class AdminComponent implements OnInit {
         }
       });
   }
-
-  // randomJavascript() {
-  //   let membersRand: Member[] = JSON.parse(JSON.stringify(this.elements));
-  //   membersRand = membersRand.sort((a,b) => b.blacklist.length - a.blacklist.length);
-  //   let blacklist = [];
-  //   for (let i = 0; i < membersRand.length; i++) {
-  //     const black = blacklist.concat(membersRand[i].blacklist);
-  //     const arrFind = this.elements.filter(s => !black.includes(s.name));
-  //     if (arrFind.length === 0) {
-  //       this.permut(membersRand[i]);
-  //       break;
-  //     }
-  //     const memberAssign = this.createRandom(arrFind)
-  //     const mem = this.elements.filter(s => s.email === membersRand[i].email)[0];
-  //     mem.personExchange = memberAssign.name;
-  //     blacklist.push(memberAssign.name);
-  //   }
-  // }
-
-  // permut(member: Member) {
-  //   console.log('Entro a la permuta');
-  //   let personExchange = '';
-  //   for (let i = 0; i < this.elements.length; i++) {
-  //     if (!this.elements[i].blacklist.includes(member.name)) {
-  //       if (!member.blacklist.includes(this.elements[i].personExchange)) {
-  //         personExchange = this.elements[i].personExchange;
-  //         this.elements[i].personExchange = member.name;
-  //         break;
-  //       }
-  //     }
-      
-  //   }      
-  //   const memberChange: Member  = this.elements.filter(s => s.name === member.name)[0];
-  //   memberChange.personExchange = personExchange;
-  // }
-
-  // createRandom(arrMembers: Member[]) {
-  //   let randomElement: Member;
-  //   const randomIndex = Math.floor(Math.random() * arrMembers.length);
-  //   randomElement = arrMembers[randomIndex];
-  //   return randomElement;
-  // }
-
 }
